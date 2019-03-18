@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nicholas.wx.entity.mapper.InvicardLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.juyou.wx.entity.dto.InvicardLog">
+        <id column="id" property="id" />
+        <result column="openid" property="openid" />
+        <result column="unionid" property="unionid" />
+        <result column="user_id" property="userId" />
+        <result column="code" property="code" />
+        <result column="media_id" property="mediaId" />
+        <result column="share_num" property="shareNum" />
+        <result column="is_active_into" property="isActiveInto" />
+        <result column="is_new_user" property="isNewUser" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, openid, unionid, user_id AS userId, code, media_id as mediaId, share_num as shareNum, is_active_into as isActiveInto, is_new_user as isNewUser, create_time AS createTime, update_time AS updateTime
+    </sql>
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nicholas.wx.entity.mapper.InvicardMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.juyou.wx.entity.dto.Invicard">
+        <id column="id" property="id" />
+        <result column="code" property="code" />
+        <result column="user_id" property="userId" />
+        <result column="share_user_id" property="shareUserId" />
+        <result column="views" property="views" />
+        <result column="is_receive" property="isReceive" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+      id, code, user_id as userId, share_user_id as shareUserId, views , is_receive as isReceive, create_time AS createTime, update_time AS updateTime
+    </sql>
+
+
+</mapper>

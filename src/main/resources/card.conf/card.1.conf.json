@@ -1,0 +1,112 @@
+{
+  "code": 1,
+  "defaultSubscribeCode": 1,
+  "name": "邀请函",
+  "startTime": "2018-10-1",
+  "endTime": "2018-10-31",
+  "inviteNum": 15,
+  "canEventType": "subscribe,SCAN,CLICK",
+  "scannerMsgs": [
+    {
+      "name": "subscribe",
+      "type": "text",
+      "content": "聚友，你的美好生活，从这儿开始",
+      "group": "first",
+      "index": "0"
+    },
+    {
+      "name": "scan",
+      "type": "text",
+      "content": "等你很久了！:scanner，你已为 :sharer 第一步的助力任务，Ta也邀请你来免费领取： \n 分享下方邀请卡到朋友圈或微信群，:inviteNum个未关注过“聚友”的好友扫码关注后（每个好友只能助力一次，成功会有提示哦），就可以免费获得价值328元的旅游年卡一张！\n邀请卡正在生成中↓↓↓ ",
+      "group": "first",
+      "index": "0"
+    },
+    {
+      "name": "scan",
+      "type": "text",
+      "content": "扫码免费领取旅游年卡中：\n分享下方邀请卡到朋友圈或微信群，15个未关注过“聚友”的好友扫码关注后（每个好友只能助力一次，成功会有提示哦），就可以免费获得328元一张的旅游年卡啦！\n邀请卡正在生成中↓↓↓",
+      "isDefault": 1,
+      "group": "first",
+      "onlyOnce": 1,
+      "index": "0"
+    }
+  ],
+  "sharerMsgs": [
+    {
+      "name": "sharer-1",
+      "type": "text",
+      "content": "你的好友 :sharer 已为你助力，现在只需要:needNum个好友关注就能免拿到全国免费旅游年卡了，加油！",
+      "onlyOnce": 1,
+      "index": 1
+    },
+    {
+      "name": "sharer-3",
+      "type": "text",
+      "content": "人品大爆发！你的好友 :sharer 已为你助力，现在还差:needNum个好友的助力就可以拿到全国免费旅游年卡了！全国500+景区任你免费游玩！",
+      "onlyOnce": 1,
+      "index": 3
+    },
+    {
+      "name": "sharer-5",
+      "type": "text",
+      "content": "wow！你的好友 :sharer 已为你助力！现在距离成功只有一半了！再有:needNum位好友的助力就可以领到全国免费旅游年卡了！",
+      "onlyOnce": 1,
+      "index": 5
+    },
+    {
+      "name": "sharer-7",
+      "type": "text",
+      "content": "oh！你的好友 :sharer 已为你助力！只差:needNum位好友的助力了！加油哦，你的全国免费旅游年卡，我们已经为你准备好了哦！",
+      "onlyOnce": 1,
+      "index": 7
+    },
+    {
+      "name": "sharer-9",
+      "type": "text",
+      "content": "ohh！你的好友 :sharer 已为你助力！还差:needNum位好友的助力！",
+      "onlyOnce": 1,
+      "index": 9
+    },
+    {
+      "name": "sharer-11",
+      "type": "text",
+      "content": "你的好友 :sharer 已为你助力！还差:needNum位好友的助力！免费的年卡准备到手！",
+      "onlyOnce": 1,
+      "index": 11
+    },
+    {
+      "name": "sharer-13",
+      "type": "text",
+      "content": "你的好友 :sharer 已为你助力！还差:needNum位好友的助力！距离领卡还差一点点！",
+      "onlyOnce": 1,
+      "index": 13
+    },
+    {
+      "name": "sharer-15",
+      "type": "text",
+      "content": "你的好友 :sharer 已为你助力！恭喜你成功获得价值328元的旅游年卡一张！",
+      "onlyOnce": 1,
+      "index": 15
+    }
+  ],
+  "success": [
+    {
+      "type": "text",
+      "content": "恭喜你成功获得价值 328元一张的旅游年卡！"
+    }
+  ],
+  "pictures": [
+    {
+      "type": "background",
+      "isBackground": 1,
+      "filePath": "card.1.image.jpg"
+    },
+    {
+      "type": "qrcode",
+      "width": 100,
+      "height": 100,
+      "startX": 105,
+      "startY": 880
+    }
+  ]
+}
